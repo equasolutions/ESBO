@@ -1,0 +1,528 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+
+<META http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">	 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">	 
+<META name="AppVersion" content="5.0">    <TITLE>Standard properties of glazing 
+with solar shading</TITLE> 
+<SCRIPT language="javascript" type="text/javascript">
+
+function storeState(id,state)
+{
+	try{ external.script("(SET-STREAM-VAR _PANE :IDHVARS " + id + " " + state + ")");
+	} catch(e) { }
+}
+
+function swap(id,me,main,alt) {
+me.children[1].innerHTML = (me.children[1].innerHTML == main) ? alt : main;
+var el = document.getElementById(id);
+ if (el) {
+	if ( el.style.display != 'none' ) {
+		el.style.display = 'none';
+      storeState(id,"NIL");
+	}
+	else {
+		el.style.display = '';
+      storeState(id,"T");
+	}
+ }
+}
+
+function swapPic(ImageID,ImageFileName,ImageFileName2)
+{
+var str = document.getElementById(ImageID).src;
+
+var str2 =  str.substring(0,str.lastIndexOf('/')+1)
+
+if (str.substring(str.lastIndexOf('/')+1) ==  ImageFileName)
+{
+document.getElementById(ImageID).src = str2 + ImageFileName2;
+}
+else{
+document.getElementById(ImageID).src = str2 + ImageFileName;
+}
+}
+</SCRIPT>
+ 
+<STYLE>
+<!--
+body       {font-family:"Verdana", sans-serif; background-color:white }
+table.rep  { text-align:center; font-size:8pt; border-collapse:collapse; page-break-inside:avoid}
+table.head { border-collapse:collapse; border:black }
+table.fixed { table-layout:fixed }
+td.head    {vertical-align:top; padding:0 }
+td.head2   {vertical-align:center; padding:1pt 2pt; font-size:8pt; font-weight: bold }
+td.value   {white-space:nowrap;padding:0 2pt; font-size:7pt}
+td.value2  {white-space:nowrap;padding:0 2pt; font-size:8pt; font-weight: bold}
+td.values  {white-space:nowrap;padding:0 2pt; font-size:7pt; border-top:none;border-bottom:none }
+th.title   { text-align:center; vertical-align:middle; font-size:14pt; font-weight:bold }
+th.section { text-align:left; font-size:10pt; font-weight:bold; padding: 1pt 3pt }
+.label     { text-align:left; vertical-align:top; font-size:8pt; padding: 1pt 3pt} 
+th.label   { text-align:left; vertical-align:top; font-size:10pt; padding: 1pt 3pt} 
+td.data    { vertical-align:top; font-size:8pt; padding: 1pt 3pt} 
+td.tight   { width:40pt }
+.colhead { text-align:left; font-size:10pt; font-weight:bold; padding: 1pt 3pt }
+div.leg1 {border:1px solid black; padding:0; width:12pt; min-width:10pt;margin:2pt; font-size:6pt}
+div.leg2 {border:1px solid black; padding:0; width:24pt; min-width:24pt;margin:1pt 3pt; font-size:6pt}
+hr.leg1  {height:10pt;width:12pt;;margin:-2pt;padding:0;border:1px solid black;font-size:6pt}
+hr.leg2   {height:10pt;width:24pt;;margin:-2pt;padding:0;border:1px solid black;font-size:6pt}
+td.leg2   {vertical-align:center; padding:0; font-size: 6pt }
+span.leg1 {border:1px solid;font-family: Arial;font-size:6pt;vertical-align:center;margin-bottom:2px}
+th.color  {padding-bottom:2pt } 
+h2         {font-size:13pt}
+h3         {font-size:12pt}
+h4         {font-size:11pt}
+.shade     { background-color: #EAEAEA }
+.hbord     {border-top:2px solid; border-bottom:2px solid black}
+.vbord     {border-left:2p solid blackx; border-right:2px solid black}
+.lbord     {border-left:2px solid black; border-bottom:2px solid black}
+div.page { width:17cm; page-break-inside:avoid; margin:6pt 0}
+.val_shade { white-space:nowrap;padding:0 2pt; font-size:7pt; background-color: #EAEAEA }
+.ch_shade { vertical-align:center; padding:1pt 2pt; font-size:8pt; font-weight: bold; background-color: #EAEAEA }
+.label_shade_lbord {background-color: #EAEAEA; text-align:left; vertical-align:top; font-size:8pt; padding: 1pt 3pt; border-left-width:2px; border-bottom-width:2px }
+.label_shade_vbord {background-color: #EAEAEA; text-align:left; vertical-align:top; font-size:8pt; padding: 1pt 3pt; border-left-width:2px; border-right-width:2px }
+.value_shade_hbord {white-space:nowrap;padding:0 2pt; font-size:7pt; background-color: #EAEAEA; border-top-width:2px; border-bottom-width:2px }
+
+.slot:hover { background-color: #DAFADA; }
+
+@media print {
+  .menu { display:none }
+}
+a
+{color:grey;
+ cursor:hand;
+}
+-->
+</STYLE>
+ </HEAD>
+<BODY style="background-color: white;"> 
+<DIV class="page">
+<TABLE width="639" class="head" bordercolor="#000000" border="1" 
+cellspacing="0">
+  <COLGROUP>
+  <COL width="88">
+  <COL width="222">
+  <COL width="120">
+  <COL width="190">
+  <TBODY>
+  <TR>
+    <TH colspan="2"><IMG width="199" height="64" style="margin: 3pt; border: currentColor; border-image: none; height: 48pt;" 
+      alt="logo" src="window%20report1_1-filer/logo.png">		 
+    <TH class="title" colspan="2">Standard properties of glazing with solar 
+      shading	 </TR>
+  <TR>
+    <TH class="section" colspan="2">Project	    
+    <TH class="section" colspan="2">Window	 
+  <TR>
+    <TD class="label">Case		 
+    <TD class="data">Building	    
+    <TD class="label">Glazing	    
+    <TD class="data">SGG Cool-lite Xtreme 70-33	 
+  <TR>
+    <TD class="label">Created by		 
+    <TD class="data">Max Tillberg	    
+    <TD class="label">Solar shading	    
+    <TD class="data">Verosol® EnviroScreen 802-829 black (Verosol)	 
+  <TR>
+    <TD class="label">Customer		 
+    <TD class="data">
+    <TD class="label">Simulated		 
+    <TD class="data">15/12/2021 09:20:18 </TR></TBODY></TABLE></DIV>
+<DIV class="page"><BR>
+<TABLE width="639" class="rep" bordercolor="#000000" border="1">
+  <COLGROUP>
+  <COL width="250" style="text-align: left;">
+  <COL width="80">
+  <COL width="120">
+  <COL width="120">
+  <TBODY>
+  <TR>
+    <TH class="ch_shade" colspan="2">&nbsp;
+    <TH class="ch_shade">Without shading
+    <TH class="ch_shade">With shading</TR>
+  <TR>
+    <TD class="label" colspan="4">EN ISO 52022-3 (summer conditions): 
+  <TR>
+    <TD class="label">Total solar energy transmittance
+    <TD class="value"><I>g</I><SUB>tot</SUB> 
+    <TD class="value">0.312 
+    <TD class="value">0.150</TR>
+  <TR>
+    <TD class="label">Convection factor
+    <TD class="value"><I>g</I><SUB>c</SUB> 
+    <TD class="value">0.012 
+    <TD class="value">0.030</TR>
+  <TR>
+    <TD class="label">Thermal radiation factor
+    <TD class="value"><I>g</I><SUB>th</SUB> 
+    <TD class="value">0.025 
+    <TD class="value">0.062</TR>
+  <TR>
+    <TD class="label">Ventilation factor
+    <TD class="value"><I>g</I><SUB>v</SUB> 
+    <TD class="value">0.000 
+    <TD class="value">0.051</TR>
+  <TR>
+    <TD class="label">Secondary internal heat transfer factor
+    <TD class="value"><I>q</I><SUB>i</SUB> 
+    <TD class="value">0.037 
+    <TD class="value">0.143</TR>
+  <TR>
+    <TD class="value" colspan="4">&nbsp;</TR>
+  <TR>
+    <TD class="label" colspan="4">EN ISO 52022-3 (reference conditions): 
+  <TR>
+    <TD class="label">Total solar energy transmittance
+    <TD class="value"><I>g</I><SUB>tot</SUB> 
+    <TD class="value">0.306 
+    <TD class="value">0.142</TR>
+  <TR>
+    <TD class="label">U-value of glazing
+    <TD class="value"><I>U</I><SUB>g</SUB> 
+    <TD class="value">0.556 
+    <TD class="value">0.473</TR>
+  <TR>
+    <TD class="value" colspan="4">&nbsp;</TR>
+  <TR class="label">
+    <TD class="label" colspan="4">EN 410: 
+  <TR>
+    <TD class="label">Direct solar transmittance
+    <TD class="value"><I>τ</I><SUB>e</SUB> 
+    <TD class="value">0.275 
+    <TD class="value">0.007</TR>
+  <TR>
+    <TD class="label">Solar reflectance outside
+    <TD class="value"><I>ρ</I><SUB>e</SUB> 
+    <TD class="value">0.381 
+    <TD class="value">0.495</TR>
+  <TR>
+    <TD class="label">Solar reflectance inside
+    <TD class="value"><I>ρ'</I><SUB>e</SUB> 
+    <TD class="value">0.411 
+    <TD class="value">0.317</TR>
+  <TR>
+    <TD class="value" colspan="4">&nbsp;</TR>
+  <TR>
+    <TD class="label">Visual transmittance
+    <TD class="value"><I>τ</I><SUB>v</SUB> 
+    <TD class="value">0.634 
+    <TD class="value">0.016</TR>
+  <TR>
+    <TD class="label">Visual reflectance outside
+    <TD class="value"><I>ρ</I><SUB>v</SUB> 
+    <TD class="value">0.130 
+    <TD class="value">0.421</TR>
+  <TR>
+    <TD class="label">Visual reflectance inside
+    <TD class="value"><I>ρ'</I><SUB>v</SUB> 
+    <TD class="value">0.157 
+    <TD class="value">0.053</TR>
+  <TR>
+    <TD class="value" colspan="4">&nbsp;</TR>
+  <TR>
+    <TD class="label">UV-transmittance
+    <TD class="value"><I>τ</I><SUB>uv</SUB> 
+    <TD class="value">0.113 
+    <TD class="value">0.003</TR></TBODY></TABLE><BR>
+<TABLE width="639" class="rep" bordercolor="#000000" border="1">
+  <COLGROUP>
+  <COL style="width: 25px;">
+  <COL style="width: 400px;">
+  <COL style="width: 50px;">
+  <COL style="width: 60px;">
+  <COL style="width: 60px;">
+  <TBODY>
+  <TR>
+    <TH class="ch_shade" colspan="2">Layer
+    <TH class="ch_shade">d [mm]
+    <TH class="ch_shade">T [°C]
+    <TH class="ch_shade">α<SUB>e</SUB> [-]</TR>
+  <TR>
+    <TD class="label">&nbsp;
+    <TD class="label">Outside
+    <TD class="value">&nbsp;
+    <TD class="value">25.0
+    <TD class="value">&nbsp;</TR>
+  <TR style="vertical-align: top;">
+    <TD class="label">1.
+    <TD class="label">SGG COOL-LITE XTR 70-33 II 6mm (Saint-Gobain) 
+    <TD class="value">6.0 
+    <TD class="value">38.8 
+    <TD class="value">0.353 
+  <TR style="vertical-align: top;">
+    <TD class="label">2.
+    <TD class="label">Air (10%) / Argon (90%) Mix - EN673 (WIN7) 
+    <TD class="value">16.0 
+    <TD class="value">39.1 
+    <TD class="value">&nbsp;
+  <TR style="vertical-align: top;">
+    <TD class="label">3.
+    <TD class="label">SGG PLANICLEAR 4mm (Saint-Gobain) 
+    <TD class="value">4.0 
+    <TD class="value">39.5 
+    <TD class="value">0.012 
+  <TR style="vertical-align: top;">
+    <TD class="label">4.
+    <TD class="label">Air (10%) / Argon (90%) Mix - EN673 (WIN7) 
+    <TD class="value">16.0 
+    <TD class="value">37.7 
+    <TD class="value">&nbsp;
+  <TR style="vertical-align: top;">
+    <TD class="label">5.
+    <TD class="label">SGG PLANITHERM XN 4mm (Saint-Gobain) 
+    <TD class="value">4.0 
+    <TD class="value">35.9 
+    <TD class="value">0.042 
+  <TR style="vertical-align: top;">
+    <TD class="label">6.
+    <TD class="label">Air 
+    <TD class="value">69.8 
+    <TD class="value">28.9 
+    <TD class="value">&nbsp;
+  <TR style="vertical-align: top;">
+    <TD class="label">7.
+    <TD class="label">Generic interior roller shade 
+    <TD class="value">0.4 
+    <TD class="value">30.9 
+    <TD class="value">0.091 
+  <TR>
+    <TD class="label">&nbsp;
+    <TD class="label">Inside
+    <TD class="value">&nbsp;
+    <TD class="value">25.0
+    <TD class="value">&nbsp;</TR></TBODY></TABLE><BR>
+<DIV style="padding: 5px; border: 1px solid currentColor; border-image: none; width: 628px; height: 160px;"><svg 
+xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 620 150" 
+preserveAspectRatio="none meet"><circle style="fill: #ffd700;" cx="0" cy="0" r="23" 
+/> <line style="stroke: #ffd700; stroke-width: 1;" x1="0" y1="0" x2="30" y2="15" 
+/> <line style="stroke: #ffd700; stroke-width: 1;" x1="0" y1="0" x2="15" y2="30" 
+/> <rect style="fill: #87cefa;" x="30" y="0" width="29" height="150" /> <line 
+style="stroke: #f08080; stroke-width: 2;" x1="59" y1="0" x2="59" y2="150" /> 
+<rect style="fill: #87cefa;" x="136" y="0" width="19" height="150" /> <rect 
+style="fill: #87cefa;" x="232" y="0" width="20" height="150" /> <line style="stroke: #f08080; stroke-width: 2;" 
+x1="232" y1="0" x2="232" y2="150" /> <rect style="fill: #d2691e;" x="588" y="0" 
+width="2" height="150" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="10" y1="125" x2="30" y2="33" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="30" y1="33" x2="59" y2="30" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="59" y1="30" x2="136" y2="25" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="136" y1="25" x2="155" y2="25" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="155" y1="25" x2="232" y2="50" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="232" y1="50" x2="252" y2="50" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="252" y1="50" x2="588" y2="84" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="588" y1="84" x2="590" y2="84" /> <line style="stroke: #00ff00; stroke-width: 3;" 
+x1="590" y1="84" x2="610" y2="125" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="middle" x="10" y="136">25.0</text> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="middle" x="610" y="136">25.0</text> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="middle" x="136" y="22">39.5</text> </svg> </DIV><BR>
+<TABLE width="639" class="rep" bordercolor="#000000" border="1">
+  <TBODY>
+  <TR>
+    <TD class="label">Ventilation openings for shading: Up/down/left/right 
+      (mm):
+    <TD class="value">10
+    <TD class="value">10
+    <TD class="value">10
+    <TD class="value">10</TR></TBODY></TABLE><BR></DIV>
+<DIV class="page">
+<TABLE width="639" class="head3, menu" bordercolor="#666666" bgcolor="#cccccc" 
+border="1" cellspacing="0">
+  <COLGROUP>
+  <COL width="87">
+  <COL width="522">
+  <TBODY>
+  <TR>
+    <TD class="label">
+      <DIV id="hidediags"><A id="ShowMenu" onclick="swap('diagrams',this,'Show spectral properties','Hide spectral properties');swapPic('img_1','expand.gif', 'collapse.gif');"><IMG 
+      width="14" height="14" id="img_1" src="window%20report1_1-filer/expand.gif"><SPAN 
+      style="padding-left: 3pt;">Show spectral properties</SPAN></A>     
+  </DIV></TR></TBODY></TABLE>
+<DIV id="diagrams" style="display: none;">
+<H2>Spectral properties</H2>
+<H3>Without shading</H3>
+<DIV style="padding: 5px; border: 1px solid currentColor; border-image: none; width: 630px; height: 230px;"><svg 
+xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 756 274" 
+preserveAspectRatio="none meet"><rect style="fill: #e0ffff;" x="61" y="22" 
+width="114" height="166" /> <rect style="stroke: #c0c0c0; stroke-width: 1;" 
+fill="none" x="33" y="22" width="680" height="166" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="68" y1="22" x2="68" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="131" y1="22" x2="131" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="194" y1="22" x2="194" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="257" y1="22" x2="257" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="319" y1="22" x2="319" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="382" y1="22" x2="382" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="445" y1="22" x2="445" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="508" y1="22" x2="508" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="571" y1="22" x2="571" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="634" y1="22" x2="634" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="697" y1="22" x2="697" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="188" x2="713" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="155" x2="713" y2="155" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="122" x2="713" y2="122" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="88" x2="713" y2="88" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="55" x2="713" y2="55" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="22" x2="713" y2="22" /> <polyline style="stroke: #ff0000; stroke-width: 1;" 
+fill="none" points="33,188 39.3,187.75 45.59,179.92 51.89,161.04 58.19,144.71 64.48,120.87 70.78,100.72 77.07,89.79 83.37,84.02 89.67,81.33 95.96,80.07 102.26,79.8 108.56,80.13 114.85,81.13 121.15,82.51 127.44,84.43 133.74,88.18 140.04,96.1 146.33,112.95 152.63,133.04 158.93,152.01 165.22,167 171.52,177.09 177.81,182.85 184.11,185.7 190.41,187.24 201.43,187.89 217.17,188 232.91,188 248.65,188 264.39,188 280.13,188 295.87,188 311.61,188 327.35,188 343.09,188 358.83,188 374.57,188 390.31,188 406.06,188 421.8,188 437.54,188 453.28,188 469.02,188 484.76,188 500.5,188 516.24,188 531.98,188 547.72,188 563.46,188 579.2,188 594.94,188 618.56,188 650.04,188 681.52,188 713,188" 
+/> <polyline style="stroke: #00aa00; stroke-width: 1;" fill="none" points="33,180.15 39.3,179.6 45.59,162.62 51.89,130.66 58.19,126.75 64.48,137.62 70.78,152.49 77.07,160.83 83.37,163.68 89.67,164.16 95.96,163.98 102.26,164.43 108.56,165.13 114.85,166.19 121.15,167.53 127.44,168.94 133.74,170.19 140.04,171.07 146.33,171 152.63,167.03 158.93,158.55 165.22,147.41 171.52,135.01 177.81,122.78 184.11,111.29 190.41,99.07 201.43,88.48 217.17,82.13 232.91,80.15 248.65,79 264.39,78.09 280.13,76.96 295.87,75.53 311.61,74.11 327.35,72.23 343.09,70.02 358.83,67.85 374.57,65.57 390.31,62.57 406.06,59.53 421.8,56.99 437.54,55.28 453.28,54.32 469.02,54.05 484.76,54.24 500.5,54.59 516.24,54.97 531.98,55.33 547.72,55.9 563.46,56.46 579.2,56.44 594.94,56.63 618.56,62.95 650.04,63.42 681.52,64.33 713,70.21" 
+/> <line style="stroke: #000000; stroke-width: 1;" x1="19" y1="199" x2="734" 
+y2="199" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="734" y="216">λ</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="68" y1="193" x2="68" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="61" y="216">400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="131" y1="193" x2="131" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="124" y="216">600</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="194" y1="193" x2="194" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="187" y="216">800</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="257" y1="193" x2="257" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="244" y="216">1000</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="320" y1="193" x2="320" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="307" y="216">1200</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="383" y1="193" x2="383" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="370" y="216">1400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="446" y1="193" x2="446" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="433" y="216">1600</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="509" y1="193" x2="509" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="496" y="216">1800</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="572" y1="193" x2="572" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="559" y="216">2000</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="635" y1="193" x2="635" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="622" y="216">2200</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="698" y1="193" x2="698" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="685" y="216">2400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="27" y1="6" x2="27" y2="218" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="17" /> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="188" x2="33" y2="188" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="192"> 0.0</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="155" x2="33" y2="155" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="159"> 0.2</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="122" x2="33" y2="122" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="126"> 0.4</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="88" x2="33" y2="88" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="92"> 0.6</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="55" x2="33" y2="55" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="59"> 0.8</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="22" x2="33" y2="22" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="26"> 1.0</text> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="65" y="242" /> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="85" y="242">TAU, dimless</text> <line style="stroke: #ff0000; stroke-width: 1;" 
+x1="65" y1="237" x2="82" y2="237" /> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="85" y="258">RHO</text> <line style="stroke: #00aa00; stroke-width: 1;" 
+x1="65" y1="253" x2="82" y2="253" /> </svg> </DIV>
+<H3>With shading</H3>
+<DIV style="padding: 5px; border: 1px solid currentColor; border-image: none; width: 630px; height: 230px;"><svg 
+xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 756 274" 
+preserveAspectRatio="none meet"><rect style="fill: #e0ffff;" x="61" y="22" 
+width="114" height="166" /> <rect style="stroke: #c0c0c0; stroke-width: 1;" 
+fill="none" x="33" y="22" width="680" height="166" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="68" y1="22" x2="68" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="131" y1="22" x2="131" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="194" y1="22" x2="194" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="257" y1="22" x2="257" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="319" y1="22" x2="319" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="382" y1="22" x2="382" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="445" y1="22" x2="445" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="508" y1="22" x2="508" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="571" y1="22" x2="571" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="634" y1="22" x2="634" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="697" y1="22" x2="697" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="188" x2="713" y2="188" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="155" x2="713" y2="155" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="122" x2="713" y2="122" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="88" x2="713" y2="88" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="55" x2="713" y2="55" /> <line style="stroke: #c0c0c0; stroke-width: 1;" 
+x1="33" y1="22" x2="713" y2="22" /> <polyline style="stroke: #ff0000; stroke-width: 1;" 
+fill="none" points="33,188 39.3,188 45.59,187.81 51.89,187.21 58.19,186.68 64.48,186.08 70.78,185.67 77.07,185.55 83.37,185.37 89.67,185.12 95.96,185.21 102.26,185.28 108.56,185.38 114.85,185.43 121.15,185.49 127.44,185.56 133.74,185.58 140.04,185.7 146.33,185.97 152.63,186.18 158.93,186.48 165.22,186.97 171.52,187.41 177.81,187.71 184.11,187.87 190.41,187.95 201.43,187.99 217.17,188 232.91,188 248.65,188 264.39,188 280.13,188 295.87,188 311.61,188 327.35,188 343.09,188 358.83,188 374.57,188 390.31,188 406.06,188 421.8,188 437.54,188 453.28,188 469.02,188 484.76,188 500.5,188 516.24,188 531.98,188 547.72,188 563.46,188 579.2,188 594.94,188 618.56,188 650.04,188 681.52,188 713,188" 
+/> <polyline style="stroke: #00aa00; stroke-width: 1;" fill="none" points="33,180.15 39.3,179.6 45.59,162.34 51.89,126.83 58.19,116.93 64.48,116.39 70.78,117.83 77.07,118.2 83.37,115.74 89.67,113.47 95.96,112.22 102.26,112.5 108.56,113.91 114.85,116.64 121.15,120.01 127.44,123.64 133.74,128.47 140.04,135.73 146.33,148.03 152.63,154.26 158.93,152.77 165.22,145.31 171.52,134.41 177.81,122.64 184.11,111.26 190.41,99.07 201.43,88.48 217.17,82.13 232.91,80.15 248.65,79 264.39,78.09 280.13,76.96 295.87,75.53 311.61,74.11 327.35,72.23 343.09,70.02 358.83,67.85 374.57,65.57 390.31,62.57 406.06,59.53 421.8,56.99 437.54,55.28 453.28,54.32 469.02,54.05 484.76,54.24 500.5,54.59 516.24,54.97 531.98,55.33 547.72,55.9 563.46,56.46 579.2,56.44 594.94,56.63 618.56,62.95 650.04,63.42 681.52,64.33 713,70.21" 
+/> <line style="stroke: #000000; stroke-width: 1;" x1="19" y1="199" x2="734" 
+y2="199" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="734" y="216">λ</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="68" y1="193" x2="68" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="61" y="216">400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="131" y1="193" x2="131" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="124" y="216">600</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="194" y1="193" x2="194" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="187" y="216">800</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="257" y1="193" x2="257" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="244" y="216">1000</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="320" y1="193" x2="320" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="307" y="216">1200</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="383" y1="193" x2="383" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="370" y="216">1400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="446" y1="193" x2="446" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="433" y="216">1600</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="509" y1="193" x2="509" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="496" y="216">1800</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="572" y1="193" x2="572" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="559" y="216">2000</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="635" y1="193" x2="635" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="622" y="216">2200</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="698" y1="193" x2="698" y2="205" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="685" y="216">2400</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="27" y1="6" x2="27" y2="218" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="17" /> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="188" x2="33" y2="188" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="192"> 0.0</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="155" x2="33" y2="155" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="159"> 0.2</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="122" x2="33" y2="122" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="126"> 0.4</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="88" x2="33" y2="88" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="92"> 0.6</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="55" x2="33" y2="55" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="59"> 0.8</text> <line style="stroke: #000000; stroke-width: 1;" 
+x1="21" y1="22" x2="33" y2="22" /> <text style="font: 11px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="end" x="21" y="26"> 1.0</text> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="65" y="242" /> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="85" y="242">TAU, dimless</text> <line style="stroke: #ff0000; stroke-width: 1;" 
+x1="65" y1="237" x2="82" y2="237" /> <text style="font: 13px/normal ARIAL, SWISS; font-size-adjust: none; font-stretch: normal; fill: #000000;" 
+text-anchor="start" x="85" y="258">RHO</text> <line style="stroke: #00aa00; stroke-width: 1;" 
+x1="65" y1="253" x2="82" y2="253" /> </svg> </DIV><BR></DIV>
+<TABLE width="639" class="head3, menu" bordercolor="#666666" bgcolor="#cccccc" 
+border="1" cellspacing="0">
+  <COLGROUP>
+  <COL width="87">
+  <COL width="522">
+  <TBODY>
+  <TR>
+    <TD class="label">
+      <DIV id="hidediags"><A id="ShowMenu" onclick="swap('iso15099',this,'Show ISO 15099 properties','Hide ISO 15099 properties');swapPic('img_2','expand.gif', 'collapse.gif');"><IMG 
+      width="14" height="14" id="img_2" src="window%20report1_1-filer/expand.gif"><SPAN 
+      style="padding-left: 3pt;">Show ISO 15099 properties</SPAN></A>     
+  </DIV></TR></TBODY></TABLE>
+<DIV id="iso15099" style="display: none;"><BR>
+<TABLE width="639" class="rep" bordercolor="#000000" border="1">
+  <COLGROUP>
+  <COL width="250" style="text-align: left;">
+  <COL width="80">
+  <COL width="120">
+  <COL width="120">
+  <TBODY>
+  <TR>
+    <TH class="ch_shade" colspan="2">&nbsp;
+    <TH class="ch_shade">Without shading
+    <TH class="ch_shade">With shading</TR>
+  <TR>
+    <TD class="label" colspan="4">ISO 15099 (summer conditions): 
+  <TR>
+    <TD class="label">Total solar energy transmittance
+    <TD class="value"><I>g</I><SUB>tot</SUB> 
+    <TD class="value">0.313 
+    <TD class="value">0.151 
+  <TR>
+    <TD class="value" colspan="4">&nbsp;</TR>
+  <TR>
+    <TD class="label" colspan="4">ISO 15099 (winter conditions): 
+  <TR>
+    <TD class="label">U-value of glazing
+    <TD class="value"><I>U</I><SUB>g</SUB> 
+    <TD class="value">0.583 
+    <TD class="value">0.497 </TR></TBODY></TABLE></DIV><BR>
+<TABLE class="head" border="0">
+  <TBODY>
+  <TR>
+    <TD class="head2">IDA Indoor Climate and Energy 	   
+  <TR>
+    <TD class="label">Version: 4.98038   
+  <TR>
+    <TD class="label">License: ESBO1:ESBO1LD:21DEC/V6F2G (trial license)  
+  </TR></TBODY></TABLE></DIV></BODY></HTML>
